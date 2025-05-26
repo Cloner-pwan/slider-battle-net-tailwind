@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.active {
+    width: 40px !important;  /* Equivalent to w-10 */
+    background-color: #148EFF; /* Equivalent to bg-[#148EFF] */
+ /* This works in raw CSS */
+}
