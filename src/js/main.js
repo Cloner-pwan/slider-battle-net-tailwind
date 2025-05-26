@@ -52,13 +52,13 @@ let intervalStatus = true;
 AutoPlaybtn.addEventListener("click", () => {
   if (intervalStatus === true) {
     clearInterval(autoslider);
-    AutoPlaybtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" part="icon"><path d="M7.768 5.489A.5.5 0 0 0 7 5.911v12.178a.5.5 0 0 0 .768.422l9.57-6.09a.5.5 0 0 0 0-.843L7.767 5.49Z"></path></svg>`;
+    AutoPlaybtn.innerHTML = `<svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" part="icon"><path d="M7.768 5.489A.5.5 0 0 0 7 5.911v12.178a.5.5 0 0 0 .768.422l9.57-6.09a.5.5 0 0 0 0-.843L7.767 5.49Z"></path></svg>`;
     intervalStatus = false;
   } else {
     autoslider = setInterval(() => {
       next();
     }, 3000);
-    AutoPlaybtn.innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" part="icon"><path d="M10 18.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5zm4.5.5a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-.5.5z"></path></svg>`;
+    AutoPlaybtn.innerHTML = ` <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" part="icon"><path d="M10 18.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5zm4.5.5a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-.5.5z"></path></svg>`;
     intervalStatus = true;
   }
 });
